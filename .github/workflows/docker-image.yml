@@ -66,5 +66,5 @@ jobs:
         with:
           name: 'VERSION'
           value: $((${{ secrets.VERSION }}+1))
-          repository: carloszan/ufsj-research
+          repository: carloszan/masters-scripts
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
