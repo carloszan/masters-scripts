@@ -55,7 +55,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           builder: ${{ steps.buildx.outputs.name }}
-          context: ./scripts/${{matrix.project_id}}/Dockerfile
+          context: ./scripts/${{matrix.project_id}}
           file: ./scripts/${{matrix.project_id}}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
