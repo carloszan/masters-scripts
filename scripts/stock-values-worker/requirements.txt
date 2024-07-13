@@ -1,0 +1,2 @@
+pymongo==4.7.2
+yfinance==0.2.40
