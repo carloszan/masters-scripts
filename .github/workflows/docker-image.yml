@@ -10,8 +10,8 @@ jobs:
     strategy:
       matrix:
         project_id:
-          - 'join-data-worker'
-          - 'stock-values-worker'
+          - join-data-worker
+          - stock-values-worker
     steps:
       - name: Checkout
         uses: actions/checkout@v4
