@@ -19,7 +19,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=${{ secrets.DOCKER_USERNAME }}/${GITHUB_REPOSITORY#*/}
+          DOCKER_IMAGE=${{ secrets.DOCKER_USERNAME }}/${{matrix.project_id}}
           VERSION=latest
           SHORTREF=v${{ secrets.VERSION }}
           # If this is git tag, use the tag name as a docker tag
